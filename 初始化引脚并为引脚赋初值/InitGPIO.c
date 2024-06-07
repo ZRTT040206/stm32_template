@@ -50,3 +50,8 @@ void InitGPIOB(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOB, &GPIO_InitStructure);						//将所有引脚初始化为上拉输入
 }
+
+/*输入函数
+GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_1)    	//输入GPIOB在Pin_1的值，格式为uint8_t
+GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_1)    //读取GPIOB在Pin_1的值，格式为uint8_t
+*/
